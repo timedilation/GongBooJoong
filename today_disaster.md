@@ -12,7 +12,7 @@ python file 이름을 package_name.py로 하고 그 파일 안에서 ```import p
 prev, curr 둘다 0인데 if문 안에 계속 들어감.
 
 ## 2019.5.28
-와 한달만임
-```/usr/include/signal.h:30:1: error: expected initializer before ‘extern’```
-```support/common.h:51:1: error: expected initializer before ‘typedef’```
+와 한달만임  
+```/usr/include/signal.h:30:1: error: expected initializer before ‘extern’```  
+```support/common.h:51:1: error: expected initializer before ‘typedef’```  
 첨부한 첫번째 헤더 파일에서 이런 오류가 자꾸 떴는데 다른 헤더에서 함수 정의하고 마지막에 ;를 안찍어서였음
