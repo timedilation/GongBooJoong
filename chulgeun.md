@@ -1,6 +1,6 @@
 # Choolgeun
 
-|  Date  |Choolgeun| Toegeun | Elasped |
+|  Date  |Choolgeun| Toegeun | Elapsed |
 |:------:|:-------:|:-------:|:-------:|
 |  01/21 |  10:15  |  20:09  |  9:54   |
 |  01/22 |  10:28  |  20:58  |  10:30  |
