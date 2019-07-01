@@ -16,3 +16,22 @@ prev, curr 둘다 0인데 if문 안에 계속 들어감.
 ```/usr/include/signal.h:30:1: error: expected initializer before ‘extern’```  
 ```support/common.h:51:1: error: expected initializer before ‘typedef’```  
 첨부한 첫번째 헤더 파일에서 이런 오류가 자꾸 떴는데 다른 헤더에서 함수 정의하고 마지막에 ;를 안찍어서였음
+
+## 2019.7.1
+재앙까지는 아닌데 재미있어서 올려봄ㅋㅋㅋ
+
+```
+int** elements_each_row = (int**) malloc(sizeof(int*) * mat_size);
+for(int i=0; i<mat_size; i++)
+    elements_each_row[i] = (int*) malloc(sizeof(int) * num_elements_each_row[i]);
+```
+
+이렇게 초기화를 하고 나중에 프리를 해주는데
+
+```
+for(int i=0; i<mat_size; i++)
+    free(elements_each_row[i]);
+```
+
+여기서 터지는것.. 생각해보니 irregular matrix이기 때문에 element가 없는 row가 있었지 않을까...
+그래서 0인 경우 free안하게 바꾸니 잘 돌아갔다고 한다.
