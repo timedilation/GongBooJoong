@@ -35,3 +35,11 @@ for(int i=0; i<mat_size; i++)
 
 여기서 터지는것.. 생각해보니 irregular matrix이기 때문에 element가 없는 row가 있었지 않을까...
 그래서 0인 경우 free안하게 바꾸니 잘 돌아갔다고 한다.
+
+## 2019.7.25
+someCount가 -1일 때 다른 조작을 해야 해서 증가시키는 코드를 이렇게 만들음
+```
+if(someCount > 0)
+    someCount++;
+```  
+someCount는 0부터 증가하는 거였음(...)
